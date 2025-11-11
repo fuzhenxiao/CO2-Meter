@@ -17,7 +17,7 @@ fuzhenxiao/
 ├── extract_feature.py    # Feature extraction to build graphs
 ├── hardware.py           # Hardware configurations
 ├── make_graph.py         # build graphs
-├── model.py              # Energy-Prediction model definition (GNN)
+├── model.py              # Energy-Prediction model definition
 └── train_and_test.py     # Training and testing pipeline
 ```
 
