@@ -13,7 +13,7 @@ fuzhenxiao/
 ├── raw data/             # Contains 40k raw data samples (requires decompression)
 │
 ├── build_dataset.py      # Build PyTorch datasets (.pt files)
-├── dataset.py            # Dataset utilities
+├── dataset.py            # Dataset class
 ├── extract_feature.py    # Feature extraction to build graphs
 ├── hardware.py           # Hardware configurations
 ├── make_graph.py         # build graphs
@@ -27,11 +27,11 @@ fuzhenxiao/
 
 The `raw data` folder contains approximately 40,000 raw data samples.
 You need to **decompress** the data before use.
-Depending on your training configuration, you may need to **split the raw data** into multiple CSV files.
+Depending on your training configuration, you need to **split the raw data** into multiple CSV files.
 
 ### 2. Build the Dataset
 
-Use the following command to generate `.pt` files for PyTorch:
+Use the following command to generate `.pt` files for PyTorch from CSV files:
 
 ```
 python build_dataset.py
@@ -42,7 +42,7 @@ You can obtain a token from your Hugging Face account
 
 ### 3. Train and Test the Model
 
-After preparing the dataset, run the training script:
+After preparing the dataset, configure which .pt files to use and run the training script:
 
 ```
 python train_and_test.py
