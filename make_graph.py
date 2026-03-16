@@ -471,3 +471,4 @@ def extract_graph_features(model_id, hardware, inference_config):
     )
 
     return features, adjacent, global_feature
+
